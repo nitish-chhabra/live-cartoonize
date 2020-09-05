@@ -5,17 +5,48 @@ Cartoonize your own video through the input from the video camera. OpenCV is use
 ## Demo
 ![Cartoonize Demo](demo.gif)
 
-### Installation
+## Installation
 
 Cartoonize requires [OpenCV](https://github.com/opencv/opencv) v4.2+ to run.
 
 Install the dependencies and run the main.py file to run a live demo of the cartoonize implementation
 
+If you prefer a native install:
 ```sh
 $ cd path/to/your/install/directory
 $ git clone https://github.com/traveller-scientist/live-cartoonize.git
+$ cd live-cartoonize 
 $ pip3 install -r requirements.txt
-$ python3 -m main.py
+$ python3 main.py
+```
+
+If you prefer a virtual environment (Unix or MacOS):
+```sh
+$ cd path/to/your/install/directory
+$ git clone https://github.com/traveller-scientist/live-cartoonize.git
+$ python3 -m venv live-cartoonize
+$ cd live-cartoonize 
+$ source bin/activate
+$ pip3 install -r requirements.txt
+$ python3 main.py
+```
+
+If you prefer a virtual environment (Windows - cmd):
+```sh
+$ cd path/to/your/install/directory
+$ git clone https://github.com/traveller-scientist/live-cartoonize.git
+$ python3 -m venv live-cartoonize
+$ cd live-cartoonize 
+$ Scripts\activate.bat
+$ pip3 install -r requirements.txt
+$ python3 main.py
+```
+
+To exit the OpenCV cartoonize window please press q on the keyboard 
+
+To exit out of the virtual environment:
+```sh
+$ deactivate
 ```
 
 License
